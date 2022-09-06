@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #efefef;
+  min-height: 100vh;
+  padding-bottom: 58px;
+  position: relative;
+}
+
+.logo {
+  font-weight: 400;
+  background: linear-gradient(90deg, #3340b8 -16.43%, #ff1ea5 121.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background: #dfd4e851;
+  align-items: center;
+  box-shadow: 0px 2px 9px 0px #00000057;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  display: flex;
+  padding-right: 2rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a.active {
+  color: #4e3bb5;
+}
+
+.logo {
+  padding-left: 2rem;
+}
+
+.container {
+  padding: 0 7rem;
+}
+
+.select-colors_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.select-colors_wrapper p {
+  font-size: 1.2rem;
+}
+
+.select-colors {
+  margin-top: 0.5rem;
+}
+
+.select-colors button,
+.select-colors input {
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.select-colors button {
+  width: 30px;
+  cursor: pointer;
+}
+
+.select-colors input {
+  width: 70px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.btn-add {
+  padding: 0.5rem 3.6rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #cec8c8;
+}
+
+.color-circle {
+  background: #6e2c2c;
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.color-text {
+  margin-top: 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.btn-click {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid purple;
+  cursor: pointer;
+  display: flex;
+  margin: 3rem auto;
+  background: #ffecfe;
+  font-weight: 800;
+  transition: 0.2s all;
+}
+
+.btn-click:hover {
+  background: #f3e0f2;
+  transform: translateY(-3px);
+  box-shadow: 1px 0px 8px 0px #00008b4d;
+}
+
+footer {
+  background: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h5 {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
