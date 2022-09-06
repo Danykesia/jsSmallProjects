@@ -1,6 +1,6 @@
 ## Color Generator
 ### This application creates a color generator with two settings: simple colors (it shows color names) and Hexadecimal colors.
-### The most essentials concepts used in this application were:
+### The most essentials concepts used in this application are:
 * arrays
 * document.querySelectorAll
 * forEach/for
