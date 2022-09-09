@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #d2e0e7;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 4rem;
+}
+
+hr {
+  width: 100px;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #0089ff;
+  border: none;
+  margin-top: 0.3rem;
+}
+
+.container {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.box {
+  margin: 3rem auto 0;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  width: 70%;
+}
+
+.box .circle {
+  height: 180px;
+  width: 180px;
+  background-color: #336e99;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box .circle .img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: -7px;
+}
+
+.box h4 {
+  margin-top: 2rem;
+  font-size: 1.22rem;
+  letter-spacing: 3px;
+}
+
+.box h5 {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #41599a;
+}
+
+.box p {
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  color: #454343;
+  font-size: 1.08rem;
+}
+
+.cta,
+.buttons button {
+  border: none;
+  border-radius: 4px;
+  transition: .2s all;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 18px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 0.4rem 0.8rem;
+  background-color: #c9e1f6;
+  color: #58628e;
+}
+
+.buttons button:hover {
+  background-color: #c3dbef;
+}
