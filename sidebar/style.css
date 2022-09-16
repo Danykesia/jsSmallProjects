@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #efefef;
+  min-height: 100vh;
+  padding-bottom: 58px;
+  position: relative;
+}
+
+.logo {
+  font-weight: 400;
+  background: linear-gradient(90deg, #3340b8 -16.43%, #ff1ea5 121.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: #dfd4e8;
+  align-items: center;
+  box-shadow: 0px 2px 9px 0px #00000057;
+  position: relative;
+  z-index: 2;
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #27282c;
+  padding: 1rem;
+  transition: 0.4s all linear;
+  position: fixed;
+  transform: translateX(-100vw);
+  width: 50%;
+  left: 0;
+  top: 60px;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.toggle-menu {
+  display: flex;
+}
+
+.show-nav {
+  transform: translateX(0);
+  height: 100%;
+  width: 50%;
+}
+
+.close-btn {
+  align-self: flex-end;
+  color: #ffffff;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.close-btn:hover {
+  color: #a146a4;
+}
+
+.nav li {
+  display: flex;
+  list-style: none;
+}
+
+.nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+}
+
+.nav li a.active {
+  color: #d785da;
+}
+
+.nav li a:hover {
+  color: #d785da;
+}
+
+.menu {
+  background-color: #c4c4c4;
+  display: flex;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .show-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .navbar {
+    padding: 0.6rem 5rem;
+    height: 60px;
+  }
+
+  .nav {
+    flex-direction: row;
+    background-color: transparent;
+    transform: translateX(0);
+    padding: 0;
+    width: auto;
+    position: relative;
+    transition: none;
+    top: 0;
+    left: 0;
+    height: auto;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .nav li a {
+    color: #a146a4;
+    padding: 0 0.8rem;
+  }
+
+  .nav li a:hover {
+    color: #363739;
+  }
+
+  .nav li a.active {
+    color: #363739;
+  }
+}
